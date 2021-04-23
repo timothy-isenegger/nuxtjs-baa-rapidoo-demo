@@ -1,55 +1,33 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="page">
+    <div class="page-header">
+      <div class="container">
+        <a href="/" class="d-block">
+          <Logo />
+        </a>
+      </div>
+    </div>
+    <div class="page-content">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+body {
+  background-color: #F0F0F2;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.page-header {
+  background-color: white;
+  padding: 1rem 0;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.page-content {
+  padding: 3rem 0;
 }
 </style>

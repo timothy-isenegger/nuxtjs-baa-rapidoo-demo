@@ -1,18 +1,23 @@
 {
-  "name": "nuxtjs",
+  "name": "vuejs.nuxtjs.rapidoodemo",
   "version": "1.0.0",
-  "description": "My astonishing Nuxt.js project",
-  "author": "msweeneydev",
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt generate",
-    "start": "nuxt start"
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@nuxtjs/vercel-builder": "^0.21.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5"
   }
 }

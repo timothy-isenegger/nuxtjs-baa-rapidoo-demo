@@ -1,0 +1,163 @@
+{
+  "phases": [
+    {
+      "id": 1,
+      "title": "Set",
+      "icon": "star"
+    },
+    {
+      "id": 2,
+      "title": "Meet",
+      "icon": "briefcase"
+    },
+    {
+      "id": 3,
+      "title": "Track",
+      "icon": "link"
+    }
+  ],
+  "steps": [
+    {
+      "id": "1",
+      "title": "Meeting erstellen",
+      "image": "screenshot1.png",
+      "phaseId": 1,
+      "references": [
+        {
+          "id": "1",
+          "title": "Meetingname",
+          "description": "Der Meetingname sollte sprechend sein.",
+          "order": 1,
+          "posX": 200,
+          "posY": 136
+        },
+        {
+          "id": "2",
+          "title": "Account",
+          "description": "Du hast einen gratis Account von Rapidoo. Alle weiteren müssen bezahlt werden.",
+          "order": 2,
+          "posX": 200,
+          "posY": 187
+        },
+        {
+          "id": "3",
+          "title": "Projekt",
+          "description": "Du kannst 3 Projekte selbst erstellen, um deine Meetings zu ordnen.",
+          "order": 3,
+          "posX": 200,
+          "posY": 237
+        },
+        {
+          "id": "4",
+          "title": "Datum",
+          "description": "Wähle das Datum, an welchem dein Meeting stattfindet.",
+          "order": 4,
+          "posX": 200,
+          "posY": 287
+        },
+        {
+          "id": "5",
+          "title": "Zeit (optional)",
+          "description": "Die Zeit kann optional ausgefüllt werden. Versuche ein einfaches Format wie 130 und siehe was passiert!",
+          "order": 4,
+          "posX": 200,
+          "posY": 337
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Meeting vorbereiten",
+      "image": "screenshot2.png",
+      "phaseId": 1,
+      "references": [
+        {
+          "id": "1",
+          "title": "Teilnehmende",
+          "description": "Füge Teilnehmende hinzu. das ist wichtig!",
+          "order": 1,
+          "posX": 100,
+          "posY": 264
+        },
+        {
+          "id": "2",
+          "title": "Agenda",
+          "description": "Die Traktanden ergeben die Outline von deinem Meeting. Worüber wird gesprochen?",
+          "order": 2,
+          "posX": 100,
+          "posY": 425
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Meeting durchführen",
+      "image": "screenshot3.png",
+      "phaseId": 2,
+      "references": [
+        {
+          "id": "1",
+          "title": "Sub-Agendapunkt erstellen",
+          "description": "Füge Teilnehmende hinzu. das ist wichtig!",
+          "order": 1,
+          "posX": 100,
+          "posY": 264
+        },
+        {
+          "id": "2",
+          "title": "Kommentar erfassen",
+          "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
+          "order": 2,
+          "posX": 100,
+          "posY": 325
+        },
+        {
+          "id": "3",
+          "title": "ToDo erfassen",
+          "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
+          "order": 3,
+          "posX": 100,
+          "posY": 425
+        },
+        {
+          "id": "4",
+          "title": "Beschluss erfassen",
+          "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
+          "order": 4,
+          "posX": 100,
+          "posY": 525
+        }
+      ]
+    }
+  ],
+  "gameSteps": [
+    {
+      "id": 1,
+      "name": "First element"
+    },
+
+    {
+      "id": 2,
+      "name": "Second element"
+    },
+
+    {
+      "id": 3,
+      "name": "Third element"
+    },
+    {
+      "id": 4,
+      "name": "fourth element"
+    },
+
+    {
+      "id": 5,
+      "name": "fifth element"
+    },
+
+    {
+      "id": 6,
+      "name": "sixth element"
+    }
+  ]
+}
