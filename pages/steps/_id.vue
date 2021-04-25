@@ -3,7 +3,7 @@
   <h1>{{ step.title }}</h1>
   <div class="row">
     <div class="col-12 col-md-8">
-      <div id="step-image-wrapper">
+      <div id="step-image-wrapper" class="mb-5 mb-md-3">
         <img :src="require(`~/assets/images/${step.image}`)" class="img-fluid" alt=""/>
         <div v-for="reference in step.references"
              :key="reference.id"
@@ -32,11 +32,11 @@
     <div class="col-12 col-md-4">
       <ul class="references">
         <li v-for="reference in step.references" :key="reference.id" :id="'referenceItem' + reference.id" class="references-item" @click="openReference(reference.id)">
-          {{ reference.title }}
+          {{ reference.id }} {{ reference.title }}
         </li>
       </ul>
     </div>
-    
+
     <div class="col-md-8 d-flex justify-content-between mt-4">
       <div v-for="phase in phases" :key="phase.id" class="phase-item text-uppercase" :class="{ 'phase-item-active' : phase.id === activePhase.id}" :id="'phase' + phase.id">
         {{ phase.title }}<b-icon :icon="phase.icon" class="ml-2"></b-icon>
@@ -153,8 +153,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '~/assets/scss/variables';
+@import '~/node_modules/bootstrap/scss/functions';
+@import '~/node_modules/bootstrap/scss/variables';
+@import '~/node_modules/bootstrap/scss/mixins';
+@import '~/node_modules/bootstrap/scss/grid';
+
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
 
   .references {
     list-style: none;
@@ -163,16 +172,16 @@ export default {
 
   .references-item {
     background-color: white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     margin-bottom: .5rem;
     padding: .5rem 1rem;
     transition: all .2s ease-in-out;
-  }
 
-  .references-item.active {
-    background-color: #1E648C;
-    color: white;
+    &.active, &:hover, &:focus {
+     border-color: #1E648C;
+    }
   }
 
   #step-image-wrapper {
@@ -187,29 +196,28 @@ export default {
     opacity: 0;
   }
 
-  .b-popover {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  }
-
   .phase-item {
     position: relative;
 
-    &:not(:last-child):after {
-      content: '';
-      display: inline-block;
-      width: 200px;
-      border-top: 1px solid $dark;
-      position: absolute;
-      left: 80px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    @include media-breakpoint-up(xl) {
+      &:not(:last-child):after {
+        content: '';
+        display: inline-block;
+        width: 200px;
+        border-top: 1px solid $dark;
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
 
-    &:nth-child(2) {
-      &:after {
-        left: 100px;
+      &:nth-child(2) {
+        &:after {
+          left: 100px;
+        }
       }
     }
+
 
     &-active {
       color: $primary;

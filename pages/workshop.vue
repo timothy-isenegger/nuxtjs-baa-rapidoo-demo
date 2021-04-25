@@ -12,6 +12,9 @@
             <div v-for="step in steps" :key="step.id" class="workshop-game-step">{{ step.name }}</div>
           </draggable>
         </div>
+        <nuxt-link to="/steps/3" class="btn btn-outline-secondary mt-4">
+          zurück
+        </nuxt-link>
       </div>
       <div class="col-12 col-md-4 offset-md-1">
         <section v-if="!gameCorrect">

@@ -28,7 +28,7 @@
           "title": "Meetingname",
           "description": "Der Meetingname sollte sprechend sein.",
           "order": 1,
-          "posX": 200,
+          "posX": 135,
           "posY": 136
         },
         {
@@ -36,7 +36,7 @@
           "title": "Account",
           "description": "Du hast einen gratis Account von Rapidoo. Alle weiteren müssen bezahlt werden.",
           "order": 2,
-          "posX": 200,
+          "posX": 135,
           "posY": 187
         },
         {
@@ -44,7 +44,7 @@
           "title": "Projekt",
           "description": "Du kannst 3 Projekte selbst erstellen, um deine Meetings zu ordnen.",
           "order": 3,
-          "posX": 200,
+          "posX": 135,
           "posY": 237
         },
         {
@@ -52,7 +52,7 @@
           "title": "Datum",
           "description": "Wähle das Datum, an welchem dein Meeting stattfindet.",
           "order": 4,
-          "posX": 200,
+          "posX": 135,
           "posY": 287
         },
         {
@@ -60,8 +60,8 @@
           "title": "Zeit (optional)",
           "description": "Die Zeit kann optional ausgefüllt werden. Versuche ein einfaches Format wie 130 und siehe was passiert!",
           "order": 4,
-          "posX": 200,
-          "posY": 337
+          "posX": 135,
+          "posY": 324
         }
       ]
     },
@@ -77,12 +77,12 @@
           "description": "Füge Teilnehmende hinzu. das ist wichtig!",
           "order": 1,
           "posX": 100,
-          "posY": 264
+          "posY": 265
         },
         {
           "id": "2",
           "title": "Agenda",
-          "description": "Die Traktanden ergeben die Outline von deinem Meeting. Worüber wird gesprochen?",
+          "description": "Die Agendapunkte (auch Traktanden genannt) ergeben die Outline von deinem Meeting. Worüber wird gesprochen?",
           "order": 2,
           "posX": 100,
           "posY": 425
@@ -98,34 +98,34 @@
         {
           "id": "1",
           "title": "Sub-Agendapunkt erstellen",
-          "description": "Füge Teilnehmende hinzu. das ist wichtig!",
+          "description": "Sub-Agendapunkte helfen, eine granulierte Struktur aufzubauen.",
           "order": 1,
-          "posX": 100,
-          "posY": 264
+          "posX": 452,
+          "posY": 395
         },
         {
           "id": "2",
           "title": "Kommentar erfassen",
           "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
           "order": 2,
-          "posX": 100,
-          "posY": 325
+          "posX": 469,
+          "posY": 395
         },
         {
           "id": "3",
           "title": "ToDo erfassen",
-          "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
+          "description": "Mit ToDos werden Aufgaben erfasst, welche einer Person zugewiesen werden können.",
           "order": 3,
-          "posX": 100,
-          "posY": 425
+          "posX": 487,
+          "posY": 395
         },
         {
           "id": "4",
           "title": "Beschluss erfassen",
-          "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
+          "description": "Beschlüsse werden farblich hervorgehoben und bekommen dadurch eine hohe Gewichtung.",
           "order": 4,
-          "posX": 100,
-          "posY": 525
+          "posX": 505,
+          "posY": 395
         }
       ]
     }
