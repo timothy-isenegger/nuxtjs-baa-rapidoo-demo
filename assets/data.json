@@ -28,40 +28,56 @@
           "title": "Meetingname",
           "description": "Der Meetingname sollte sprechend sein.",
           "order": 1,
-          "posX": 135,
-          "posY": 136
+          "posX": 180,
+          "posY": 57,
+          "posXsm": 180,
+          "posYsm": 91,
+          "posXmd": 180,
+          "posYmd": 78,
+          "posXlg": 180,
+          "posYlg": 111,
+          "posXxl": 135,
+          "posYxl": 136
         },
         {
           "id": "2",
           "title": "Account",
           "description": "Du hast einen gratis Account von Rapidoo. Alle weiteren müssen bezahlt werden.",
           "order": 2,
-          "posX": 135,
-          "posY": 187
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 135,
+          "posYxl": 187
         },
         {
           "id": "3",
           "title": "Projekt",
           "description": "Du kannst 3 Projekte selbst erstellen, um deine Meetings zu ordnen.",
           "order": 3,
-          "posX": 135,
-          "posY": 237
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 135,
+          "posYxl": 237
         },
         {
           "id": "4",
           "title": "Datum",
           "description": "Wähle das Datum, an welchem dein Meeting stattfindet.",
           "order": 4,
-          "posX": 135,
-          "posY": 287
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 135,
+          "posYxl": 287
         },
         {
           "id": "5",
           "title": "Zeit (optional)",
           "description": "Die Zeit kann optional ausgefüllt werden. Versuche ein einfaches Format wie 130 und siehe was passiert!",
-          "order": 4,
-          "posX": 135,
-          "posY": 324
+          "order": 5,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 135,
+          "posYxl": 324
         }
       ]
     },
@@ -76,16 +92,20 @@
           "title": "Teilnehmende",
           "description": "Füge Teilnehmende hinzu. das ist wichtig!",
           "order": 1,
-          "posX": 100,
-          "posY": 265
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 100,
+          "posYxl": 265
         },
         {
           "id": "2",
           "title": "Agenda",
           "description": "Die Agendapunkte (auch Traktanden genannt) ergeben die Outline von deinem Meeting. Worüber wird gesprochen?",
           "order": 2,
-          "posX": 100,
-          "posY": 425
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 100,
+          "posYxl": 425
         }
       ]
     },
@@ -100,32 +120,40 @@
           "title": "Sub-Agendapunkt erstellen",
           "description": "Sub-Agendapunkte helfen, eine granulierte Struktur aufzubauen.",
           "order": 1,
-          "posX": 452,
-          "posY": 395
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 452,
+          "posYxl": 395
         },
         {
           "id": "2",
           "title": "Kommentar erfassen",
           "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
           "order": 2,
-          "posX": 469,
-          "posY": 395
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 469,
+          "posYxl": 395
         },
         {
           "id": "3",
           "title": "ToDo erfassen",
           "description": "Mit ToDos werden Aufgaben erfasst, welche einer Person zugewiesen werden können.",
           "order": 3,
-          "posX": 487,
-          "posY": 395
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 487,
+          "posYxl": 395
         },
         {
           "id": "4",
           "title": "Beschluss erfassen",
           "description": "Beschlüsse werden farblich hervorgehoben und bekommen dadurch eine hohe Gewichtung.",
           "order": 4,
-          "posX": 505,
-          "posY": 395
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 505,
+          "posYxl": 395
         }
       ]
     }

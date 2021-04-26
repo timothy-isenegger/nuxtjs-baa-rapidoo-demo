@@ -7,16 +7,13 @@
           <p>Anleitung:</p>
           <p>Klicke auf eine der Boxen und halte die linke Maustaste gedrückt. Ziehe die Box an die von dir gewünschte Stelle und lasse die Maustaste wieder los. Sobald du mit der Reihenfolge zufrieden bist, klicke rechts auf "Jetzt prüfen".</p>
         </div>
-        <div class="workshop-game-background" :class="{completed: gameCorrect}">
+        <div class="workshop-game-background mb-4 mb-md-0" :class="{completed: gameCorrect}">
           <draggable v-model="steps" group="people" @start="drag=true" @end="drag=false">
             <div v-for="step in steps" :key="step.id" class="workshop-game-step">{{ step.name }}</div>
           </draggable>
         </div>
-        <nuxt-link to="/steps/3" class="btn btn-outline-secondary mt-4">
-          zurück
-        </nuxt-link>
       </div>
-      <div class="col-12 col-md-4 offset-md-1">
+      <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
         <section v-if="!gameCorrect">
           <p>Hast du bei der Einführung in Rapidoo gut aufgepasst? Dann wird die folgende Aufgabe ein Kinderspiel für dich sein.</p>
           <p>Bringe die Schritte eines Meetings auf der linken Seite in die von Rapidoo vorgesehene Reihenfolge. Schaffst du es im ersten Anlauf, die Reihenfolge korrekt darzustellen? Es erwartet dich ein tolles Überraschungsgeschenk, mit welchem du in jedem Meeting glänzen wirst.</p>
@@ -34,6 +31,11 @@
           <p>Du machst deine Meetings nach wie vor auf Papier? Hier kannst du eine kurze Checkliste herunterladen, die dich bei deinen Meetings optimal unterstützt.<br/></p>
           <a href="/sample.pdf" title="Checkliste" target="_blank">Checkliste herunterladen</a>
         </section>
+      </div>
+      <div class="col-12">
+        <b-button variant="outline-secondary" @click="navigateToLastStep()" class="mt-4">
+          zurück
+        </b-button>
       </div>
     </div>
   </div>
@@ -87,6 +89,12 @@ export default {
         [array[i], array[j]] = [array[j], array[i]];
       }
       return array;
+    },
+    navigateToLastStep() {
+      window.localStorage.setItem('showLastReference', '1');
+      this.$router.push({
+        path: '/steps/3'
+      })
     }
   }
 }
