@@ -93,43 +93,58 @@ export default {
     navigateToLastStep() {
       window.localStorage.setItem('showLastReference', '1');
       this.$router.push({
-        path: '/steps/3'
+        path: '/steps/6'
       })
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "assets/scss/variables";
+
+h1 {
+  margin-top: 3rem;
+}
+
 .workshop-game-background {
   background-color: white;
   padding: 2rem;
   min-height: 50vh;
-}
 
-.workshop-game-background.completed {
+  &.completed {
   pointer-events: none;
+  }
 }
 
 .workshop-game-step {
   background-color: #E0E0E0;
   border: 1px solid transparent;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: grab;
   margin-bottom: 10px;
   padding: 15px;
-}
+  transition: all .2s ease-in-out;
 
-.workshop-game-step:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .25);
+  }
+
+  &.sortable-chosen {
+    cursor: grabbing;
+  }
 }
 
 .is-correct {
-  border-color: #219653;
+  background-color: rgba($success, .25);
 }
 
 .is-incorrect {
-  border-color: #EB5757;
+  background-color: rgba($danger, .25);
 }
 
 .text-black {

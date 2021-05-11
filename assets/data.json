@@ -26,7 +26,7 @@
         {
           "id": "1",
           "title": "Meetingname",
-          "description": "Der Meetingname sollte sprechend sein.",
+          "description": "Du startes mit dem Meetingnamen. Dieser wird allen Teilnehmern des Meetings angezeigt.",
           "order": 1,
           "posX": 180,
           "posY": 57,
@@ -42,7 +42,7 @@
         {
           "id": "2",
           "title": "Account",
-          "description": "Du hast einen gratis Account von Rapidoo. Alle weiteren müssen bezahlt werden.",
+          "description": "Wähle hier den gewünschten Account. Die verschiedenen Accounts lassen dich z. B. mit unterschiedlichen E-Mail Adressen arbeiten.",
           "order": 2,
           "posX": 20,
           "posY": 20,
@@ -52,7 +52,7 @@
         {
           "id": "3",
           "title": "Projekt",
-          "description": "Du kannst 3 Projekte selbst erstellen, um deine Meetings zu ordnen.",
+          "description": "Wähle das Projekt, in welchem das Meeting stattfinden soll. Diese Info hilft dir deine Meetings zu organisieren.",
           "order": 3,
           "posX": 20,
           "posY": 20,
@@ -62,7 +62,7 @@
         {
           "id": "4",
           "title": "Datum",
-          "description": "Wähle das Datum, an welchem dein Meeting stattfindet.",
+          "description": "Bestimme das Datum des Meetings.",
           "order": 4,
           "posX": 20,
           "posY": 20,
@@ -72,7 +72,7 @@
         {
           "id": "5",
           "title": "Zeit (optional)",
-          "description": "Die Zeit kann optional ausgefüllt werden. Versuche ein einfaches Format wie 130 und siehe was passiert!",
+          "description": "Optional kannst du die Zeit angeben.\nDies ist insbesondere wichtig, wenn du deinen Termin später in Outlook importieren willst.",
           "order": 5,
           "posX": 20,
           "posY": 20,
@@ -90,7 +90,7 @@
         {
           "id": "1",
           "title": "Teilnehmende",
-          "description": "Füge Teilnehmende hinzu. das ist wichtig!",
+          "description": "Füge hier dem Meeting die Teilnehmer hinzu. Diese werden über die Suchfunktion in deinen Kontakten gefunden, oder können neu hinzugefügt werden.",
           "order": 1,
           "posX": 20,
           "posY": 20,
@@ -100,7 +100,7 @@
         {
           "id": "2",
           "title": "Agenda",
-          "description": "Die Agendapunkte (auch Traktanden genannt) ergeben die Outline von deinem Meeting. Worüber wird gesprochen?",
+          "description": "Um was geht es in deinem Meeting? Nun bestimmst du die Agendapunkte. Diese werden den Teilnehmern in der Einladung angezeigt.",
           "order": 2,
           "posX": 20,
           "posY": 20,
@@ -118,7 +118,7 @@
         {
           "id": "1",
           "title": "Sub-Agendapunkt erstellen",
-          "description": "Sub-Agendapunkte helfen, eine granulierte Struktur aufzubauen.",
+          "description": "Mit einem Sub-Agendapunkt, kannst du deine Agenda um eine Ebene erweitern.",
           "order": 1,
           "posX": 20,
           "posY": 20,
@@ -128,7 +128,7 @@
         {
           "id": "2",
           "title": "Kommentar erfassen",
-          "description": "Kommentare werden am meisten verwendet. Alles was besprochen wird, soll als Kommentar festgehalten werden.",
+          "description": "Alles was ins Protokoll aufgenommen werden soll, wird als Kommentar erfasst. Verwende für unterschiedliche Themen gegebenenfalls verschiedene Kommentare und schaffe damit Übersicht.",
           "order": 2,
           "posX": 20,
           "posY": 20,
@@ -138,7 +138,7 @@
         {
           "id": "3",
           "title": "ToDo erfassen",
-          "description": "Mit ToDos werden Aufgaben erfasst, welche einer Person zugewiesen werden können.",
+          "description": "Mit den ToDos werden Aufgaben erfasst, welche einer Person zugewiesen werden. Den Fortschritt der ToDos kannst du anschliessend überwachen.",
           "order": 3,
           "posX": 20,
           "posY": 20,
@@ -148,7 +148,7 @@
         {
           "id": "4",
           "title": "Beschluss erfassen",
-          "description": "Beschlüsse werden farblich hervorgehoben und bekommen dadurch eine hohe Gewichtung.",
+          "description": "Die Erfassung eines Beschlusses definiert eine Entscheidung im Meeting und hebt sich farblich von den Kommentaren ab.",
           "order": 4,
           "posX": 20,
           "posY": 20,
@@ -156,36 +156,159 @@
           "posYxl": 395
         }
       ]
+    },
+    {
+      "id": "4",
+      "title": "Meeting abschliessen",
+      "image": "screenshot3.png",
+      "phaseId": 2,
+      "references": [
+        {
+          "id": "1",
+          "title": "Meeting abschliessen",
+          "description": "Sobald das Meeting beendet wurde, kann es hier abgeschlossen werden. Damit erhalten die Teilnehmer direkt das Protokoll und die ihnen zugewiesenen ToDos.",
+          "order": 1,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 600,
+          "posYxl": 38
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Protokoll genehmigen",
+      "image": "screenshot4.png",
+      "phaseId": 3,
+      "references": [
+        {
+          "id": "1",
+          "title": "Protokoll anzeigen",
+          "description": "Hier kannst du das Protokoll vor der Genehmigung einsehen und die Inhalte prüfen.",
+          "order": 1,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 673,
+          "posYxl": 170
+        },
+        {
+          "id": "2",
+          "title": "Kommentar hinzufügen",
+          "description": "Das Protokoll entspricht nicht deinen Erwartungen? Hier kannst du einen Kommentar erfassen, welcher den anderen Teilnehmern angezeigt wird.",
+          "order": 2,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 656,
+          "posYxl": 170
+        },
+        {
+          "id": "3",
+          "title": "Protokoll genehmigen",
+          "description": "Falls du mit dem Protokoll einverstanden bist, kannst du es hier genehmigen. Sobald genehmigt, wird das Protokoll ins Archiv verschoben.",
+          "order": 3,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 470,
+          "posYxl": 170
+        },
+        {
+          "id": "4",
+          "title": "Status",
+          "description": "Der Status zeigt an, wie viele Teilnehmer das Protokoll bereits genehmigt haben.",
+          "order": 4,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 593,
+          "posYxl": 170
+        }
+      ]
+    },{
+      "id": "6",
+      "title": "Meeting vorbereiten",
+      "image": "screenshot5.png",
+      "phaseId": 3,
+      "references": [
+        {
+          "id": "1",
+          "title": "Verantwortlichkeit",
+          "description": "In der Übersicht der ToDos werden alle Aufgaben deiner Meetings angezeigt. Hier siehst du, wer für das ToDo verantwortlich ist.",
+          "order": 1,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 546,
+          "posYxl": 197
+        },
+        {
+          "id": "2",
+          "title": "ToDo erledigen",
+          "description": "Sobald ein ToDo erledigt ist, kannst du es hier sehen. Bist du selber der Verantwortliche für die Aufgabe, kannst du es hier als erledigt markieren.",
+          "order": 2,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 485,
+          "posYxl": 197
+        },
+        {
+          "id": "3",
+          "title": "ICS Export",
+          "description": "Mit der Export-Funktion (.ics), kannst du das ToDo in deinen Kalender übernehmen.",
+          "order": 3,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 662,
+          "posYxl": 197
+        },
+        {
+          "id": "4",
+          "title": "Fälligkeit",
+          "description": "Die Fälligkeit eines ToDos wird bereits im Meeting bestimmt. Hier kannst du prüfen, ob diese bereits überschritten wurde.",
+          "order": 4,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 622,
+          "posYxl": 197
+        },
+        {
+          "id": "5",
+          "title": "Erinnerung ToDo",
+          "description": "Falls die Fälligkeit eines ToDos überschritten wurde, kannst du den Verantwortlichen automatisch per Mail erinnern.",
+          "order": 5,
+          "posX": 20,
+          "posY": 20,
+          "posXxl": 667,
+          "posYxl": 218
+        }
+      ]
     }
   ],
   "gameSteps": [
     {
       "id": 1,
-      "name": "First element"
+      "name": "Meetingname vergeben"
     },
-
     {
       "id": 2,
-      "name": "Second element"
+      "name": "Datum des Meeting auswählen"
     },
-
     {
       "id": 3,
-      "name": "Third element"
+      "name": "Teilnehmende hinzufügen"
     },
     {
       "id": 4,
-      "name": "fourth element"
+      "name": "Traktanden erfassen"
     },
-
     {
       "id": 5,
-      "name": "fifth element"
+      "name": "Agenda versenden"
     },
-
     {
       "id": 6,
-      "name": "sixth element"
+      "name": "ToDo erstellen"
+    },
+    {
+      "id": 7,
+      "name": "Protokoll genehmigen"
     }
   ]
 }

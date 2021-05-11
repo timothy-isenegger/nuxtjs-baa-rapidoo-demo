@@ -51,10 +51,10 @@
           </section>
         </div>
         <div class="col-12 col-lg-5 d-none d-lg-flex align-items-center">
-          <img src="~/assets/images/rapidoo-cloud.png" alt="Rapidoo cloud" class="img-fluid">
+          <img src="~/assets/images/SMT-Clouds.svg" alt="Rapidoo cloud" class="img-fluid">
         </div>
         <div class="col-12 col-md-8 offset-md-2 mt-5">
-          <img src="~/assets/images/rapidoo-cycle.png" alt="Rapidoo cloud" class="img-fluid">
+          <img src="~/assets/images/SMT-Circle.svg" alt="Rapidoo cloud" class="img-fluid">
         </div>
       </div>
     </div>
