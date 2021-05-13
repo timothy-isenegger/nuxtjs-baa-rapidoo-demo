@@ -4,16 +4,18 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">
-            <h1>Meet Efficiently,
-              Online</h1>
+            <h1>Erreiche mehr mit deinen Meetings!</h1>
             <p class="lead">
-              Find out how rapidoo helps you the most.
+              Rapidoo bringt deine Meetings auf ein neues Level! Steigere deine Effizienz, behalte jederzeit den Überblick und liefere schneller Resultate.
             </p>
-            <nuxt-link to="/steps/1" class="btn btn-primary text-uppercase">Tutorial starten
+            <nuxt-link to="/steps/1" class="btn btn-primary text-uppercase">Demo starten
               <b-icon-arrow-right class="ml-2"></b-icon-arrow-right>
             </nuxt-link>
           </div>
         </div>
+      </div>
+      <div class="chevron-down-wrapper" @click="scrollDown()">
+        <b-icon-chevron-compact-down class="icon-chevron-down"></b-icon-chevron-compact-down>
       </div>
     </section>
     <div class="container">
@@ -21,39 +23,34 @@
         <div class="col-12 col-lg-7">
           <section class="explanation explanation-set">
             <h2>Set</h2>
-            <p>Bei den Vorbereitungen kommt es besonders auf folgende Punkte an:</p>
+            <p>Als Erstes, eröffne das Meeting auf Rapidoo, lade die Teilnehmer ein und versende die Agenda.</p>
             <ol>
-              <li>Lorem ipsum dolor sit amet, consectetur</li>
-              <li>incididunt ut labore et dolore magna aliqua.</li>
-              <li>Ut enim ad minim veniam, quis nostrud</li>
-              <li>velit esse cillum dolore eu fugiat nulla pariatur.</li>
+              <li>Meeting und Agenda erstellen</li>
+              <li>Teilnehmende einladen</li>
             </ol>
           </section>
           <section class="explanation explanation-set">
             <h2>Meet</h2>
-            <p>Beim Meeting kommt es besonders auf folgende Punkte an:</p>
+            <p>Du triffst deine Kollegen und alle To Dos, Entscheidungen und Notizen werden auf Rapidoo festgehalten.</p>
             <ol>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>incididunt ut labore et dolore magna aliqua.</li>
-              <li>Ut enim ad minim veniam, quis nostrud</li>
+              <li>Notizen und To Dos erfassen</li>
+              <li>Protokoll automatisiert verschicken</li>
             </ol>
           </section>
           <section class="explanation explanation-set">
             <h2>Track</h2>
-            <p>Nach dem Meeting ist vor dem Meeting - folgende Punkte sind zu beachten:</p>
+            <p>Nach dem Meeting kannst du alle Aufgaben nachverfolgen und das Protokoll wird automatisch versendet.</p>
             <ol>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</li>
-              <li>incididunt ut labore et dolore magna aliqua.</li>
-              <li>Ut enim</li>
-              <li>velit esse cillum dolore eu fugiat nulla</li>
-              <li>incididunt ut labore et dolore magna aliqua.</li>
+              <li>Erledigung der To Dos verfolgen</li>
+              <li>Entscheidungen einsehen</li>
+              <li>Protokolle kommentieren und genehmigen</li>
             </ol>
           </section>
         </div>
         <div class="col-12 col-lg-5 d-none d-lg-flex align-items-center">
           <img src="~/assets/images/SMT-Clouds.svg" alt="Rapidoo cloud" class="img-fluid">
         </div>
-        <div class="col-12 col-md-8 offset-md-2 mt-5">
+        <div class="col-12 col-md-8 offset-md-2">
           <img src="~/assets/images/SMT-Circle.svg" alt="Rapidoo cloud" class="img-fluid">
         </div>
       </div>
@@ -62,7 +59,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    scrollDown() {
+      window.scrollTo({
+        top: document.querySelector('.jumbotron').clientHeight + 72,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
 </script>
 
 <style lang="scss">
@@ -73,6 +80,22 @@ export default {}
   background-size: cover;
   background-position: center bottom;
   min-height: 80vh;
+  position: relative;
+}
+
+.chevron-down-wrapper {
+  bottom: 0;
+  cursor: pointer;
+  left: 50%;
+  padding: 1rem 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.icon-chevron-down {
+  font-size: 3rem;
 }
 
 h1 {
