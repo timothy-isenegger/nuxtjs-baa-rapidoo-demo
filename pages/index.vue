@@ -6,7 +6,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <h1>Erreiche mehr mit deinen Meetings!</h1>
             <p class="lead">
-              Rapidoo bringt deine Meetings auf ein neues Level! Steigere deine Effizienz, behalte jederzeit den Überblick und liefere schneller Resultate.
+              Steigere deine Effizienz, behalte jederzeit den Überblick und liefere schneller Resultate.
             </p>
             <nuxt-link to="/steps/1" class="btn btn-primary text-uppercase">Demo starten
               <b-icon-arrow-right class="ml-2"></b-icon-arrow-right>
