@@ -26,7 +26,7 @@
         {
           "id": "1",
           "title": "Meetingname",
-          "description": "Du startes mit dem Meetingnamen. Dieser wird allen Teilnehmern des Meetings angezeigt.",
+          "description": "Du startest mit dem Meetingnamen. Dieser wird allen Teilnehmern des Meetings angezeigt.",
           "order": 1,
           "posX": 180,
           "posY": 57,
@@ -224,7 +224,7 @@
       ]
     },{
       "id": "6",
-      "title": "Meeting vorbereiten",
+      "title": "ToDo erledigen",
       "image": "screenshot5.png",
       "phaseId": 3,
       "references": [
