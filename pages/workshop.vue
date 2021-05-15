@@ -2,7 +2,24 @@
   <div class="container">
     <h1>Meeting Novize oder Experte?</h1>
     <div class="row">
-      <div class="col-12 col-md-7">
+      <div class="col-12 col-md-5 col-lg-4">
+        <section v-if="!gameCorrect">
+          <p>Hast du bei der Einführung in Rapidoo gut aufgepasst? Dann wird die folgende Aufgabe ein Kinderspiel für dich sein.</p>
+          <p>Bringe die Schritte eines Meetings auf der linken Seite in die von Rapidoo vorgesehene Reihenfolge. Schaffst du es im ersten Anlauf, die Reihenfolge korrekt darzustellen? Es erwartet dich ein tolles Überraschungsgeschenk, mit welchem du in jedem Meeting glänzen wirst.</p>
+          <p v-if="gameChecked" class="text-black">Leider stimmt die von dir gewählte Reihenfolge noch nicht ganz. Versuche es noch einmal!</p>
+          <button class="btn btn-primary" v-on:click="checkWorkshopGame()">
+            <span v-if="!gameChecked">Jetzt prüfen</span>
+            <span v-else>Erneut prüfen</span>
+          </button>
+        </section>
+        <section v-if="gameCorrect">
+          <p>Du hast den Rapidoo Workshop erfolgreich absolviert. Starte jetzt mit deinem ersten Meeting bei Rapidoo und steigere deine Effizienz!</p>
+          <a href="https://app.rapidoo.com/index.php?id=127" title="Neues Meeting" target="_blank" class="btn btn-primary d-inline-block mb-4">Meeting erstellen</a>
+          <p>Du machst deine Meetings nach wie vor auf Papier? Hier kannst du eine kurze Checkliste herunterladen, die dich bei deinen Meetings optimal unterstützt.<br/></p>
+          <a href="/sample.pdf" title="Checkliste" target="_blank">Checkliste herunterladen</a>
+        </section>
+      </div>
+      <div class="col-12 col-md-7 offset-lg-1">
         <div class="mb-4 font-italic small">
           <p>Anleitung:</p>
           <p>Klicke auf eine der Boxen und halte die linke Maustaste gedrückt. Ziehe die Box an die von dir gewünschte Stelle und lasse die Maustaste wieder los. Sobald du mit der Reihenfolge zufrieden bist, klicke rechts auf "Jetzt prüfen".</p>
@@ -12,25 +29,6 @@
             <div v-for="step in steps" :key="step.id" class="workshop-game-step">{{ step.name }}</div>
           </draggable>
         </div>
-      </div>
-      <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
-        <section v-if="!gameCorrect">
-          <p>Hast du bei der Einführung in Rapidoo gut aufgepasst? Dann wird die folgende Aufgabe ein Kinderspiel für dich sein.</p>
-          <p>Bringe die Schritte eines Meetings auf der linken Seite in die von Rapidoo vorgesehene Reihenfolge. Schaffst du es im ersten Anlauf, die Reihenfolge korrekt darzustellen? Es erwartet dich ein tolles Überraschungsgeschenk, mit welchem du in jedem Meeting glänzen wirst.</p>
-          <p v-if="gameChecked" class="text-black">Leider stimmt die von dir gewählte Reihenfolge noch nicht ganz. Versuche es noch einmal!</p>
-          <div class="text-right">
-            <button class="btn btn-primary" v-on:click="checkWorkshopGame()">
-              <span v-if="!gameChecked">Jetzt prüfen</span>
-              <span v-else>Erneut prüfen</span>
-            </button>
-          </div>
-        </section>
-        <section v-if="gameCorrect">
-          <p>Du hast den Rapidoo Workshop erfolgreich absolviert. Starte jetzt mit deinem ersten Meeting bei Rapidoo und steigere deine Effizienz!</p>
-          <a href="https://app.rapidoo.com/index.php?id=127" title="Neues Meeting" target="_blank" class="btn btn-primary d-inline-block mb-4">Meeting erstellen</a>
-          <p>Du machst deine Meetings nach wie vor auf Papier? Hier kannst du eine kurze Checkliste herunterladen, die dich bei deinen Meetings optimal unterstützt.<br/></p>
-          <a href="/sample.pdf" title="Checkliste" target="_blank">Checkliste herunterladen</a>
-        </section>
       </div>
       <div class="col-12">
         <b-button variant="outline-secondary" @click="navigateToLastStep()" class="mt-4">

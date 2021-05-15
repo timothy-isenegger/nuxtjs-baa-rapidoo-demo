@@ -23,7 +23,6 @@
         <div class="col-12 col-lg-7">
           <section class="explanation explanation-set">
             <h2>Set</h2>
-            <p>Als Erstes, eröffne das Meeting auf Rapidoo, lade die Teilnehmer ein und versende die Agenda.</p>
             <ol>
               <li>Meeting und Agenda erstellen</li>
               <li>Teilnehmende einladen</li>
@@ -31,7 +30,6 @@
           </section>
           <section class="explanation explanation-set">
             <h2>Meet</h2>
-            <p>Du triffst deine Kollegen und alle To Dos, Entscheidungen und Notizen werden auf Rapidoo festgehalten.</p>
             <ol>
               <li>Notizen und To Dos erfassen</li>
               <li>Protokoll automatisiert verschicken</li>
@@ -39,7 +37,6 @@
           </section>
           <section class="explanation explanation-set">
             <h2>Track</h2>
-            <p>Nach dem Meeting kannst du alle Aufgaben nachverfolgen und das Protokoll wird automatisch versendet.</p>
             <ol>
               <li>Erledigung der To Dos verfolgen</li>
               <li>Entscheidungen einsehen</li>

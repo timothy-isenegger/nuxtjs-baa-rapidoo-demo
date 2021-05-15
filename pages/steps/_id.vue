@@ -199,11 +199,9 @@ export default {
       const positionX = `data-posx${screensize}`;
       const positionY = `data-posy${screensize}`;
       document.querySelectorAll('.popover-wrapper').forEach((popover) => {
-        console.log(popover.getAttribute(positionX))
         popover.style.top = popover.getAttribute(positionY) + 'px';
         popover.style.left = popover.getAttribute(positionX) + 'px';
       })
-      console.log('set screensize for ' + screensize);
     }
   }
 }
@@ -246,10 +244,11 @@ h1 {
 
 .popover-wrapper {
   position: absolute;
-}
+  pointer-events: none;
 
-.popover-wrapper .btn {
-  opacity: 0;
+  .btn {
+    opacity: 0;
+  }
 }
 
 .phase-item {
