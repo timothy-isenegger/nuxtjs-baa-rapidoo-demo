@@ -16,7 +16,7 @@
           <p>Du hast den Rapidoo Workshop erfolgreich absolviert. Starte jetzt mit deinem ersten Meeting bei Rapidoo und steigere deine Effizienz!</p>
           <a href="https://app.rapidoo.com/index.php?id=127" title="Neues Meeting" target="_blank" class="btn btn-primary d-inline-block mb-4">Meeting erstellen</a>
           <p>Du machst deine Meetings nach wie vor auf Papier? Hier kannst du eine kurze Checkliste herunterladen, die dich bei deinen Meetings optimal unterstützt.<br/></p>
-          <a href="/sample.pdf" title="Checkliste" target="_blank">Checkliste herunterladen</a>
+          <a href="/checkliste_meeting_rapidoo.pdf" title="Checkliste" target="_blank">Checkliste herunterladen</a>
         </section>
       </div>
       <div class="col-12 col-md-7 offset-lg-1">
