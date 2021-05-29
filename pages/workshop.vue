@@ -5,7 +5,7 @@
       <div class="col-12 col-md-5 col-lg-4">
         <section v-if="!gameCorrect">
           <p>Hast du bei der Einführung in Rapidoo gut aufgepasst? Dann wird die folgende Aufgabe ein Kinderspiel für dich sein.</p>
-          <p>Bringe die Schritte eines Meetings auf der linken Seite in die von Rapidoo vorgesehene Reihenfolge. Schaffst du es im ersten Anlauf, die Reihenfolge korrekt darzustellen? Es erwartet dich ein tolles Überraschungsgeschenk, mit welchem du in jedem Meeting glänzen wirst.</p>
+          <p>Bringe die Schritte eines Meetings auf der rechten Seite in die von Rapidoo vorgesehene Reihenfolge. Schaffst du es im ersten Anlauf, die Reihenfolge korrekt darzustellen? Es erwartet dich ein tolles Überraschungsgeschenk, mit welchem du in jedem Meeting glänzen wirst.</p>
           <p v-if="gameChecked" class="text-black">Leider stimmt die von dir gewählte Reihenfolge noch nicht ganz. Versuche es noch einmal!</p>
           <button class="btn btn-primary" v-on:click="checkWorkshopGame()">
             <span v-if="!gameChecked">Jetzt prüfen</span>
@@ -22,7 +22,7 @@
       <div class="col-12 col-md-7 offset-lg-1">
         <div class="mb-4 font-italic small">
           <p>Anleitung:</p>
-          <p>Klicke auf eine der Boxen und halte die linke Maustaste gedrückt. Ziehe die Box an die von dir gewünschte Stelle und lasse die Maustaste wieder los. Sobald du mit der Reihenfolge zufrieden bist, klicke rechts auf "Jetzt prüfen".</p>
+          <p>Klicke auf eine der Boxen und halte die linke Maustaste gedrückt. Ziehe die Box an die von dir gewünschte Stelle und lasse die Maustaste wieder los. Sobald du mit der Reihenfolge zufrieden bist, klicke links auf "Jetzt prüfen".</p>
         </div>
         <div class="workshop-game-background mb-4 mb-md-0" :class="{completed: gameCorrect}">
           <draggable v-model="steps" group="people" @start="drag=true" @end="drag=false">
